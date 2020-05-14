@@ -10,8 +10,8 @@ export default function Main() {
 
     return (
         <div id="door">
-<div id="room-num">
-    Room {rando()}
+<div >
+    <h1 id="room-num">Room {rando()}</h1>
 </div>
 <div>
 <Link to="/room"><button id="enterButton">Enter</button></Link>

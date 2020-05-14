@@ -1,11 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Warnes&display=swap');
+
+body {
+  background-color: #141414;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#room-num {
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: 'Warnes', cursive;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
 }
+
+#enterButton {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+#enterButton:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#button-grid {
+  margin-top: 30px;
+}
+
+#btn1 {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+#btn1:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+
+
+@keyframes glow {
+  from {
+  text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e62152, 0 0    40px #e62152, 0 0 50px #e62152, 0 0 60px #e62152, 0 0 70px #e62152;
+  }
+  to {
+  text-shadow:  0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+  }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +74,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

@@ -7,14 +7,15 @@ import Main from './components/Main'
 function App() {
   return (
     <div className="App">
-      <Main/>
+    
+
 
 
 
      <Switch>
-     <Route path={'/room'} component={Room} />
+       <Route exact path={'/'} component={Main}/>
+     <Route exact path={'/room'} component={Room} />
      </Switch>
-
     </div>
   );
 }
